@@ -1,0 +1,2 @@
+class ProfilesBackofficeController < ApplicationController
+end

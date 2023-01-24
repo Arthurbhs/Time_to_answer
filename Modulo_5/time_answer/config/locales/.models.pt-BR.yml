@@ -1,9 +1,14 @@
 'pt-BR':
   activerecord:
     models:
-      user:
-        one: Dude
-        other: Dudes
+      admin:
+        one: Adminostrador
+        other: Adminostradores
+       profile:
+        one: Perfil
+        other: Perfils
     attributes:
-      user:
-        login: "Handle"
+      admin:
+        email: Email
+        created_at: Criado em
+        updated_at: Atualizado pelos
