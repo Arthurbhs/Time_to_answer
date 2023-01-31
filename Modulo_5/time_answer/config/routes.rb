@@ -9,7 +9,7 @@ end
 
 namespace :admins_backoffice do
   get 'welcome/index'
-  resources :admins, only: [:index, :edit, :update]
+  resources :admins,  except: [:delete]
 end
 
 devise_for :admins
