@@ -8,9 +8,9 @@ namespace :users_backoffice do
 end
 
 namespace :admins_backoffice do
-  get 'welcome/index'
-  resources :admins,  except: [:delete]
-end
+  get 'welcome/index' # Dashboard
+  resources :admins # Administradores
+  end
 
 devise_for :admins
 devise_for :users
