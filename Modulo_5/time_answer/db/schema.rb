@@ -25,16 +25,16 @@ ActiveRecord::Schema.define(version: 2023_01_31_131144) do
   end
 
   create_table "answers", force: :cascade do |t|
-    t.text "description"
-    t.integer "subject_id"
+    t.text "description", null: false
+    t.integer "question_id"
     t.boolean "correct", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["subject_id"], name: "index_answers_on_subject_id"
+    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
   create_table "questions", force: :cascade do |t|
-    t.text "description"
+    t.text "description", null: false
     t.integer "subject_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
