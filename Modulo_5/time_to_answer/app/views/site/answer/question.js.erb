@@ -6,7 +6,7 @@ element.classList.remove('btn-danger');
 
 if (<%= @correct %>) {
   element.classList.add('btn-success');
-  $.bootstrapGrowl('Você acertou! \\o/', {
+  $.bootstrapGrowl('Acerto miseravi!', {
     type: 'success', // (null, 'info', 'danger', 'success')
     align: 'right', // ('left', 'right', or 'center')
     allow_dismiss: true, // If true then will display a cross to close the popup.
@@ -14,7 +14,7 @@ if (<%= @correct %>) {
     });
 } else {
   element.classList.add( 'btn-danger');
-  $.bootstrapGrowl('Você errou! :(', {
+  $.bootstrapGrowl('Se deu mal panguão >:(', {
     type: 'danger', // (null, 'info', 'danger', 'success')
     align: 'right', // ('left', 'right', or 'center')
     allow_dismiss: true, // If true then will display a cross to close the popup.
